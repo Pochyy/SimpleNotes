@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/registerScreen"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/rounded_bottom_background"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <!-- back button with text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/leftarrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!-- text for Create Account -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up to get started"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:layout_marginStart="25dp"
+            android:textColor="#4A5565"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"
+
+            >
+        </TextView>
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/userinput_shape"
+            android:drawableStart="@drawable/usericon"
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:text="Enter Full Name"
+            android:textColor="#717182"
+
+            >
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginStart="25dp"
+            android:textColor="#4A5565"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"
+
+            >
+        </TextView>
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/userinput_shape"
+            android:drawableStart="@drawable/iconmail"
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:text="Enter Email"
+            android:textColor="#717182"
+
+            >
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginStart="25dp"
+            android:textColor="#4A5565"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"
+
+            >
+        </TextView>
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/userinput_shape"
+            android:drawableStart="@drawable/lockicon"
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:text="Enter Password"
+            android:textColor="#717182"
+
+            >
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:layout_marginStart="25dp"
+            android:textColor="#4A5565"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"
+
+            >
+        </TextView>
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/userinput_shape"
+            android:drawableStart="@drawable/lockicon"
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:text="Confirm Password"
+            android:textColor="#717182"
+
+            >
+
+        </EditText>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+
+        android:text="Register"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+
+        android:backgroundTint="#155DFC"
+        app:cornerRadius="12dp"
+        />
+
+    <TextView
+        android:id="@+id/backToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:gravity="center"
+        android:textColor="#155DFC"
+        android:layout_marginTop="10dp">
+
+    </TextView>
+
+</LinearLayout>
