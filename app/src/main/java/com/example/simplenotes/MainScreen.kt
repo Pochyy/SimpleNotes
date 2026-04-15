@@ -31,7 +31,15 @@ class MainScreen : AppCompatActivity(){
             when (item.itemId) {
 
                 R.id.logout_navigation -> {
+
+                    val sharedPref = getSharedPreferences("MyAppPrefs", MODE_PRIVATE)
+                    val editor = sharedPref.edit()
+
+                    editor.clear()
+                    editor.apply()
+
                     startActivity(Intent(this, LoginScreen::class.java))
+                    finish()
                 }
 
                 R.id.splash_screen -> {
