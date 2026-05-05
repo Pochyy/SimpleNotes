@@ -24,6 +24,6 @@ captures/
 *.jks
 *.keystore
 
-SimpleNotes/
+
 "@ | Out-File -Encoding utf8 .gitignore
 
